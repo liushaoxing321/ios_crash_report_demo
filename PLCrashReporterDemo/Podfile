@@ -1,0 +1,11 @@
+platform :ios, '6.0'
+
+target 'plcrashreportertest2' do
+    pod 'PLCrashReporter', '~> 1.2'
+
+end
+
+target 'plcrashreportertest2Tests' do
+
+end
+

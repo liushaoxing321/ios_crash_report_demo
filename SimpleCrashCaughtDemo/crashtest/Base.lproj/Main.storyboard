@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugF-VJ-3zX">
+                                <rect key="frame" x="169" y="58" width="38" height="30"/>
+                                <state key="normal" title="crash">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="creshTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5V4-xK-fvs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-QA-QiN">
+                                <rect key="frame" x="35" y="20" width="31" height="30"/>
+                                <state key="normal" title="read">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readLogTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="am2-ma-Rul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tim-os-dvP">
+                                <rect key="frame" x="169" y="20" width="123" height="30"/>
+                                <state key="normal" title="crah by exception">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crashExceptionTouchUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tIL-cN-Bao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsu-Xf-3Mr">
+                                <rect key="frame" x="32" y="58" width="34" height="30"/>
+                                <state key="normal" title="write">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeSome:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kp9-04-4So"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCv-Gy-jZe">
+                                <rect key="frame" x="16" y="101" width="568" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rq8-QA-QiN" firstAttribute="leading" secondItem="ugF-VJ-3zX" secondAttribute="trailing" constant="-172" id="7aO-kG-noz"/>
+                            <constraint firstItem="ugF-VJ-3zX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="Akn-2a-aU2"/>
+                            <constraint firstItem="Tim-os-dvP" firstAttribute="leading" secondItem="Rq8-QA-QiN" secondAttribute="trailing" constant="103" id="Kqb-Nt-0pX"/>
+                            <constraint firstItem="Rq8-QA-QiN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Mn2-0V-BSU"/>
+                            <constraint firstItem="XCv-Gy-jZe" firstAttribute="top" secondItem="Rq8-QA-QiN" secondAttribute="bottom" constant="51" id="Y4f-ZG-B3c"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XCv-Gy-jZe" secondAttribute="bottom" constant="13" id="ZH8-5X-B4Q"/>
+                            <constraint firstItem="XCv-Gy-jZe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="a5A-z0-goc"/>
+                            <constraint firstItem="ugF-VJ-3zX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="153" id="cPf-OR-2Il"/>
+                            <constraint firstItem="Rq8-QA-QiN" firstAttribute="leading" secondItem="ugF-VJ-3zX" secondAttribute="trailing" constant="-172" id="cdG-RG-ipq"/>
+                            <constraint firstItem="Tim-os-dvP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="kUp-SW-BE0"/>
+                            <constraint firstItem="XCv-Gy-jZe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="lfV-Xd-tZK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="XCv-Gy-jZe" id="YtA-OV-6m2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
